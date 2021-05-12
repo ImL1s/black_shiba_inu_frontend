@@ -8,10 +8,11 @@ class Body extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Image.asset(
-            "assets/images/shiba_logo.jpg",
+            "assets/images/shiba_logo_large.png",
             height: 160,
             alignment: Alignment.topCenter,
           ),
@@ -88,20 +89,70 @@ class Body extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 8),
-          Text(
-            "TOTAL SUPPLY".toUpperCase(),
-            style: Theme.of(context).textTheme.headline4.copyWith(
-              color: kTextColor,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          Text(
-            "2,100,000,000,000 BSHIB",
-            style: TextStyle(
-              fontSize: 21,
-              color: kTextColor.withOpacity(0.34),
-            ),
+          SizedBox(height: 16),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                children: [
+                  Text(
+                    "TOTAL SUPPLY".toUpperCase(),
+                    style: Theme.of(context).textTheme.headline4.copyWith(
+                      color: kTextColor,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 16),
+                  Text(
+                    "2,100,000,000,000 BSHIB",
+                    style: TextStyle(
+                      fontSize: 21,
+                      color: kTextColor.withOpacity(0.34),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(width: 32),
+              Column(
+                children: [
+                  Text(
+                    "TOTAL SUPPLY".toUpperCase(),
+                    style: Theme.of(context).textTheme.headline4.copyWith(
+                      color: kTextColor,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 16),
+                  Text(
+                    "2,100,000,000,000 BSHIB",
+                    style: TextStyle(
+                      fontSize: 21,
+                      color: kTextColor.withOpacity(0.34),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(width: 32),
+              Column(
+                children: [
+                  Text(
+                    "TOTAL SUPPLY".toUpperCase(),
+                    style: Theme.of(context).textTheme.headline4.copyWith(
+                      color: kTextColor,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 16),
+                  Text(
+                    "2,100,000,000,000 BSHIB",
+                    style: TextStyle(
+                      fontSize: 21,
+                      color: kTextColor.withOpacity(0.34),
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ],
       ),
